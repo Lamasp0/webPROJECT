@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <style>
+   .sub-header{
+    width:100% ;
+    height: 100vh;
+    background-image: linear-gradient(rgb(4,9,30,0.7), rgba(4,9,30,0.5)), url(group.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+   }
+   h1{
+        margin-top: 0;
+        margin-bottom: 20px;
+        font-size: 2em;
+        text-align: center;
+        width: 100%;
+        position: absolute;
+        top: 30%;
+        transform: translateY(-50%);
+        text-align: center;
+        color: #fff;
+        z-index: 1;
+    }
+    #members-list{
+       list-style: none;
+       padding: 0;
+       text-align: center;
+       position: absolute;
+       top: 50%;
+       left: 50%;
+       transform: translate(-50%, -50%);
+       width: 100%;
+       display: flex;
+       justify-content: space-around; 
+    
+    }
+    #members-list li{
+        color: #fff;
+        padding: 20px;
+        margin-bottom: 20px;
+        font-size: 25px;
+       
+        
+    }
+    #members-list li:last-child{
+        border-bottom: none;
+    }
+  
+    </style>
+    <title>Welcom To Club</title>
+</head>
+<body>
+    <div class="sub-header">
+<nav>
+   <img src="https://seeklogo.com/images/G/google-developers-logo-F8BF3155AC-seeklogo.com.png" class="logo"> 
+   
+<ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="Lama.html">Clubs</a></li>
+    <li><a href="workshops.html">Workshops</a></li>
+    <li><a href="News.html">News</a></li>
+    <li><a href="Group Members.html">Group Members</a></li>
+    <li><a href="contact us.html">Contact us</a></li>
+</ul>
+
+</nav>
+ 
+</div>
+<body>
+    <h1>Meet Our Team<i class="fa fa-users" aria-hidden="true"></i></h1>
+    <ul id="members-list">
+        
+        <li>Alanod Alatwai <br><br> ID:431002835 </li>
+        <li>Eida Albalwai <br><br> ID:431004881 </li>
+        <li>Lama Alamri <br><br> ID:431004165 </li>
+    </ul>
+    <script>
+        window.onload = function() {
+            shuffleList();
+        };
+        
+        function shuffleList() {
+            var ul = document.getElementById('members-list');
+            for (var i = ul.children.length; i >= 0; i--) {
+                ul.appendChild(ul.children[Math.random() * i | 0]);
+            }
+        }
+        </script>
+   
+</body>
+
+
+    <footer style="background-color:rgba(49, 49, 49, 0.829)">
+        
+        <div class="footer-content">
+        <h3>JOIN US</h3>
+
+            <ul class="socialIcons">
+                <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-google-plus"></i></a></li>
+                <li><a href="https://twitter.com/GDSCsaudi"><i class="fa-brands fa-twitter"></i></a></li>
+                
+            </ul>
+        </div>
+            <div class="footer-bottom">
+                <p>copyright &copy;2023. designed by <span>Web Development Group</span></p>
+            </div>
+    </footer>
+
+</body>
+</html>
